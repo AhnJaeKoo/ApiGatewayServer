@@ -3,10 +3,10 @@ spring:
     name: apiGatewaySvr # 저장소에서 가져올 yml 파일명
   config:
     import:
-    - "optional:configserver:http://192.168.213.181:11000/conf"
-    - "optional:configserver:http://192.168.213.182:11000/conf"
-#  cloud:    #    config:#      uri:#      - http://192.168.213.181:11000/conf
-#      - http://192.168.213.182:11000/conf#      fail-fast: true # config server 연결     
+    - "optional:configserver:http:///conf"
+    - "optional:configserver:http:///conf"
+#  cloud:    #    config:#      uri:#      - http:///conf
+#      - http:///conf#      fail-fast: true # config server 연결     
 server:
   port: 8084
 
